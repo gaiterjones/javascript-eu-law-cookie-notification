@@ -13,7 +13,7 @@
 	var cookieNotificationPath='/path-to-install-folder/
 	</script>
 
-	<script type="text/javascript" src="/js/cookienotification/cookie.notification.min.js"></script>
+	<script type="text/javascript" src="/js/cookienotification/cookie.notification.js"></script>
  */
 
 (function () {
@@ -110,7 +110,7 @@
 
         body.appendChild(container);
 		
-		if(typeof cookieNotificationMessageFade != 'undefined' || cookieNotificationMessageFade)
+		if(typeof cookieNotificationMessageFade != 'undefined' && cookieNotificationMessageFade)
 		{
 			var element=document.getElementById('cookie-notification')
 			setTimeout(function(){fade(element)},20000);
